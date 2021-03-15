@@ -5,7 +5,7 @@ use std::{
     thread,
 };
 
-fn main() {
+pub fn main() {
     //If it ends in a ! it's a macro such as println!
     println!("Hello, world!");
     single_owner();
@@ -15,7 +15,7 @@ fn main() {
 
 //FYI no function overloading
 // Generic function accepts any type that implements the display trait
-fn print_generic<T: Display>(num: T) {
+pub fn print_generic<T: Display>(num: T) {
     println!("number: {}", num);
 }
 
